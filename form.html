@@ -1,0 +1,72 @@
+<body class='body'>
+  <h1 id='title'>Form Title</h1>
+  <p id='description'>This is the description of the form</p>
+  <form id='survey-form'>
+    <div class='form'>
+      <!--Name input-->
+      <div class='input-label'>
+        <label for='name'>Name</label>
+      </div>
+      <div>
+        <input type="text" id="name" name="username" value="John Smith">
+      </div>
+      <!--Email input-->
+      <div class='input-label'>
+        <label for='email'>Email</label>
+      </div>
+
+      <div>
+        <input type="email" id="email" name="useremail" value="jsmith@something.com">
+      </div>
+      <!--Number input-->
+      <div class='input-label'><label for='number'>Number</label></div>
+      <div>
+        <input type="number" id="numberofthings" name="numberofthings" value="14">
+      </div>
+      <!--Dropdown input-->
+      <div class='input-label'><label for='number'>Dropdown</label></div>
+      <div>
+        <select id="dropdown" name="dropdown">
+          <option value="something1">something1</option>
+          <option value="something2">something2</option>
+          <option value="something3">something3</option>
+          <option value="something4">something4</option>
+        </select>
+      </div>
+      <!--RadioButton input-->
+      <div class='input-label'>
+        <label for='name1'>Do you do this?</label>
+      </div>
+
+      <div>
+        <input type="radio" id="name1" name="name1" value="somethingvalue1">
+        <label for="name">Radiobutton1</label>
+      </div>
+      <!--Checkbox input-->
+      <div class='input-label'>
+        <label for='checkbox'>Select Something</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="checkbox1" name="checkbox1">
+        <label for='checkbox1'>Select Something</label><br>
+        <input type="checkbox" id="checkbox2" name="checkbox2">
+        <label for='checkbox2'>Select Something2</label>
+      </div>
+      <!--TextArea input-->
+      <div class='input-label'>
+        <label>Input Something in the area Text</label>
+      </div>
+
+      <div>
+        <textarea>Gimme a Description</textarea>
+      </div>
+
+    </div>
+
+  </form>
+  <!--Submit input-->
+  <div class='submit-form'>
+    <input id='submitbutton' type="submit">
+  </div>
+</body>
