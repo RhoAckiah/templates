@@ -1,0 +1,28 @@
+.form {
+  display: grid;
+  grid-template-columns: 46% 50%;
+  grid-auto-rows: 3em;
+  grid-gap: 10px;
+  border: 1px solid;
+  margin: 10px;
+  padding: 10px;
+}
+
+.input-label {
+  text-align: right;
+}
+.submit-form {
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+}
+#description {
+  text-align: center;
+}
+#submitbutton {
+  height: 50px;
+  width: 150px;
+  text-align: center;
+}
