@@ -1,75 +1,125 @@
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="form.css">
+  <title>Survey Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet2" href="form.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 </head>
-<body class='body'>
-  <h1 id='title'>Form Title</h1>
-  <p id='description'>This is the description of the form</p>
-  <form id='survey-form'>
-    <div class='form'>
-      <!--Name input-->
-      <div class='input-label'>
-        <label for='name'>Name</label>
-      </div>
-      <div>
-        <input type="text" id="name" name="username" value="John Smith">
-      </div>
-      <!--Email input-->
-      <div class='input-label'>
-        <label for='email'>Email</label>
-      </div>
+<body>
+  
 
-      <div>
-        <input type="email" id="email" name="useremail" value="jsmith@something.com">
-      </div>
-      <!--Number input-->
-      <div class='input-label'><label for='number'>Number</label></div>
-      <div>
-        <input type="number" id="numberofthings" name="numberofthings" value="14">
-      </div>
-      <!--Dropdown input-->
-      <div class='input-label'><label for='number'>Dropdown</label></div>
-      <div>
-        <select id="dropdown" name="dropdown">
-          <option value="something1">something1</option>
-          <option value="something2">something2</option>
-          <option value="something3">something3</option>
-          <option value="something4">something4</option>
-        </select>
-      </div>
-      <!--RadioButton input-->
-      <div class='input-label'>
-        <label for='name1'>Do you do this?</label>
-      </div>
 
-      <div>
-        <input type="radio" id="name1" name="name1" value="somethingvalue1">
-        <label for="name">Radiobutton1</label>
-      </div>
-      <!--Checkbox input-->
-      <div class='input-label'>
-        <label for='checkbox'>Select Something</label>
-      </div>
+<div class="container">
+  <h1 id="title">Survey Form Template</h1>
+  <p id="description">This is a basic survey form template.</p> 
+ 
+  
+  
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" >Please Fill in the Form Below</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
 
-      <div>
-        <input type="checkbox" id="checkbox1" name="checkbox1">
-        <label for='checkbox1'>Select Something</label><br>
-        <input type="checkbox" id="checkbox2" name="checkbox2">
-        <label for='checkbox2'>Select Something2</label>
-      </div>
-      <!--TextArea input-->
-      <div class='input-label'>
-        <label>Input Something in the area Text</label>
-      </div>
 
-      <div>
-        <textarea>Do not give me a description</textarea>
-      </div>
 
+        <div class="modal-body">
+          <p>Survey Description.</p>
+          
+          
+          
+          
+          <!--Form-->
+          <form id="survey-form" class="needs-validation" novalidate>
+
+            <!--Name Input-->
+            <div class="form-group">
+              <label for="name" id="name-label">Name</label>
+              <input type="text" class="form-control" id="name" required placeholder="Verino">
+              <div class="invalid-feedback">Please provide a valid name.</div>
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <!--Email Input-->
+            <div class="form-group">
+              <label for="email" id="email-label">Email</label>
+              <input type="email" class="form-control" id="email" required placeholder="verinoblah@outlook.com">
+            </div>
+
+            <!--Number Input-->
+            <div class="form-group">
+              <label for="number" id="number-label">Number</label>
+              <input type="number" class="form-control" id="number" required  min="0" max="5" placeholder="4">
+            </div>
+
+            <!--Checkbox Input-->
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" required value="checkbox1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              <input type="checkbox" class="form-check-input" id="exampleCheck2" required value="checkbox2">
+              <label class="form-check-label" for="exampleCheck2">Check me out or not</label>
+            </div>
+
+            
+            
+            <!--Dropdown Input-->
+            <div class="form-group">
+              <label for="dropdown-label">Example select</label>
+              <select class="form-control" id="dropdown" id="dropdown">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <!--RadioButton Input-->
+            <div class="form-check">
+              <label class="form-check-label" for="exampleRadios1">Label Question</label><br>
+              <input class="form-check-input" type="radio" name="exampleRadios" id="Radios1" value="option1" checked>
+              <label class="form-check-label" for="Radios1" id="Radios1-label">
+                Default radio
+              </label>
+
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2">
+              <label class="form-check-label" for="exampleRadios1">
+                Default radio2
+              </label>
+            </div>
+
+            <!--TextArea Input-->
+            <div class="form-group">
+             <label for="exampleFormControlTextarea1">Example textarea</label>
+             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            
+            <!--Submit Button-->
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+          </form>
+
+
+
+
+        </div>
+        <!--Thank You Message-->
+
+
+
+        <div class="modal-footer">
+          <p>Thank you for your time</p>
+        </div>
+
+      </div>
     </div>
+</div>
 
-  </form>
-  <!--Submit input-->
-  <div class='submit-form'>
-    <input id='submitbutton' type="submit">
-  </div>
 </body>
+</html>
