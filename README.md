@@ -1,3 +1,3 @@
 # templates
-Templates of various projects
+Template of survey form
 >Form
